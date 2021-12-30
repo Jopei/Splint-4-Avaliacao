@@ -1,1 +1,1 @@
-﻿URL: https://localhost:5001/api/controller
+﻿Post ou Get: https://localhost:5001/api/controller
