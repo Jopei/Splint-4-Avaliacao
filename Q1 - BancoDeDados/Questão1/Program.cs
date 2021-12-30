@@ -14,7 +14,7 @@ namespace Questão1
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)//exibir funcionarios 
         {
             string sql = "SELECT Id, Nome, DataNascimento, CidadeId, UltimaAtualizacao FROM VW_All_Funcionarios";
             var contexto = new CidadesContexto();
@@ -28,7 +28,7 @@ namespace Questão1
 
         }
 
-        static void ADD_CIDADE(CidadesContexto add)
+        static void ADD_CIDADE(CidadesContexto add)//add cidades
         {
             string comando = "DECLARE @P_Id uniqueidentifier; SET @P_Id = NEWID();" +
                "exec SP_ADD_CIDADE " + "@P_Id, " +"@P_Nome, " +"@P_Populacao, " + "@P_TaxaCriminalidade, " +               "@P_ImpostoSobreProduto, " +
