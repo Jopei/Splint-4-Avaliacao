@@ -18,7 +18,7 @@ namespace MongoAPI.Controllers
             return Ok();
         }
         [HttpGet]
-        public  IActionResult BucarPedidos()
+        public  IActionResult BuscarPedidos()
         {
             return Ok(database.colecao);
         }
