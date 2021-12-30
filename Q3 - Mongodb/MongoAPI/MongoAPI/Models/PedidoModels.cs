@@ -11,6 +11,6 @@ namespace MongoAPI.Models
         public DateTime eventDate { get; set; }
         public string description { get; set; }
         public string api { get; set; }
-        public IDictionary<string, string> content { get; set; }
+        public IDictionary<string, string> content { get; set; }//Interface Dicionario
     }
 }
